@@ -1,0 +1,341 @@
+:root{
+    --trans: all 0.3s ease-in-out;
+}
+/* katmandu  */
+main h2{
+    color: var(--green);
+}
+.ktm{
+    background: linear-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.247)), url(../images/mount.jpg) center/cover no-repeat;
+    min-height: 80vh;
+}
+.header-flex{
+    justify-content: center;
+    align-items: flex-end;
+}
+ /* header  */
+ #header-owl{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+#header-owl img{
+    object-fit: cover;
+}
+#header-owl:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 300px;
+z-index: 4;
+background: linear-gradient(rgba(0, 0, 0, 0.176), rgba(0, 0, 0, 0.244));
+}
+#header-owl:after{
+    content: "KATHMANDU";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    z-index: 5;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    }
+    #map{
+    position: relative;
+    height: 230px;
+    width: 260px;
+    display: none;
+    }
+    #map iframe{
+        width: 100%;
+        height: 100%;
+    }
+    #map:before{
+        content: "View local Experiences on Map >";
+        position: absolute;
+        font-family: 'Raleway', sans-serif;
+        bottom: -1px;
+        cursor: pointer;
+        height: 25px;
+        left: 0.5px;
+        width: 100%;
+        background-color: #00000086;
+
+    }
+    .best-ktm{
+        margin-top: 30px;
+        padding: 10px;
+    }
+    .best-ktm h2{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .trips{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+    .trip{
+        display: inline-block;
+        margin: 30px auto;
+        position: relative;
+        width: 100%;
+    }
+    .card-hover{
+        transition: var(--trans);
+        cursor: pointer;
+    }
+    .trip img{
+        width:100%;
+        border-radius: 8px 8px 0px 0px;
+    }
+    .trip p{
+        padding: 15px;
+        line-height: 25px;
+    }
+    .trip:before{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        color: rgb(103, 49, 20);
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 22px;
+        padding: 4px 8px;
+        background-image: linear-gradient(90deg, rgb(255, 226, 200) 0%, rgb(230, 175, 138) 100%);
+        border-radius: 8px 0px;
+        width: 120px;
+        height: 20px;
+    }
+    .card-hover:hover{
+        margin-top: 10px;
+        
+    }
+    #trip1:before,#trip4:before,#trip6:before{
+        content: "Top 1: Hotels";
+    }
+    #trip2:before{
+        content: "Top 7: attraction";
+        width: 150px;
+    }
+    #trip3:before{
+        content: "Top 10: Restaurants";
+        width: 170px;
+    }
+    #trip5:before,#trip9:before{
+        content: "Top 8: Restaurants";
+        width: 170px;
+    }
+    #trip7:before{
+        content: "Top 12: Restaurants";
+        width: 170px;
+    }
+    #trip8:before{
+        content: "Top 3: Hotels";
+    }
+    #trip10:before{
+        content: "Top 4: Hotels";
+    }
+    #trip11:before{
+        content: "Top 13: Hotels";
+    }
+    #trip12:before{
+        content: "Top 20: Hotels";
+    }
+    .owl-carousel .owl-nav button.owl-prev,.owl-carousel .owl-nav button.owl-next{
+        position: absolute;
+        top: 38%;
+        left: 0;
+        background-color: rgb(0, 64, 255) !important; 
+        color: rgb(255, 255, 255) !important; 
+        font-size: 40px !important;
+        height: 50px;
+        width: 50px;
+       border-radius: 50%;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+        left: 87%;
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover,.owl-carousel .owl-nav button.owl-next:hover{
+        background-color: rgb(255, 255, 255) !important; 
+        color: rgb(0, 65, 255) !important; 
+    }
+    #travel-guide {
+        justify-content: space-around;
+        margin-top: 60px;
+        padding-bottom: 50px;
+        flex-direction: column;
+        background-color: var(--light-grey);
+    }
+    #travel-guide div:first-child{
+        width: 100%;
+    }
+    #travel-guide div:first-child p{
+        margin-top: 15px; 
+        font-size: 14px;
+    }
+    #travel-guide div:first-child h2{
+       font-size: 22px;
+    }
+    #travel-guide div:last-child{
+        margin-top: 20px;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 8px;
+    }
+    #temp-logo{
+        width: 50px !important;
+    }
+    .to-do{
+        display: flex;
+    }
+    .too-do{
+        display: flex;
+        justify-content: space-around !important ;
+        flex-direction: column;
+        width: 50%;
+        background-image: url("../images/to-do.webp");
+        padding: 10px;
+        border-radius: 12px;
+        color: white;
+        margin-right: 10px;
+    }
+    .too-do h3{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .too-do p{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .too-do .button{
+        padding: 6px;
+        border-radius: 0.2rem;
+        font-weight: 600;
+        background-color: var(--green);
+        color: #fff;
+        border: 1px solid var(--green);
+    }
+    .todo-item{
+        height: 100%;
+        margin-top: 0;
+        padding-bottom: 10px;
+    }
+    .todo-item img{
+        border-radius: 8px 8px 0px 0px;
+    }
+    .todo-item p{
+        padding: 2px 15px;
+        margin-top: 5;
+    }
+    .tooo-do{
+        margin-top: 0px !important;
+        width: 50% !important;
+    }
+    .recomd-flex{
+        justify-content: space-around !important;
+        margin: 30px 2px;
+        height: 800px;
+        flex-direction: column;
+    }
+    .recomd-place{
+     height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    margin-left: 11px;
+    cursor: pointer;
+    margin-top: 15px;
+    }
+    .recomd-place h3{
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .recomd-place:nth-child(1){
+        background: linear-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.247)), url('https://ak-d.tripcdn.com/images/100i10000000oiy8l214A_C_670_770_R5.jpg_.webp?proc=source%2ftrip') center/cover no-repeat;
+    }
+    .recomd-place:nth-child(2){
+        background: linear-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.247)), url('https://ak-d.tripcdn.com/images/1A0114000000w72uaF482_C_670_770_R5.jpg_.webp?proc=source%2ftrip') center/cover no-repeat;
+    }
+    .recomd-place:nth-child(3){
+        background: linear-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.247)), url('https://ak-d.tripcdn.com/images/1A0h15000000xr0qd15A1_C_670_770_R5.jpg_.webp?proc=source%2ftrip') center/cover no-repeat;
+    }
+    .recomd-place:nth-child(4){
+        background: linear-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.247)), url('https://ak-d.tripcdn.com/images/10091c000001d8nvdAD63_C_670_770_R5.jpg_.webp?proc=source%2ftrip') center/cover no-repeat;
+    }
+    @media(min-width:992px){
+        #header-owl{
+            width: 70% !important;
+            margin-top: 30px;
+        }
+        #map{
+            height: 303px !important;
+            width: 319px !important;
+            }
+            #travel-guide div:first-child h2,.best-ktm h2{
+                font-size: 35px !important;
+             }
+             
+    }
+    @media(min-width:768px){
+        .header-flex{
+            justify-content: space-between;
+        }
+        #header-owl{
+            width: 60%;
+            margin-top: 20px;
+        }
+        #map{
+            height: 300px;
+            width: 327px;
+            display: block;
+        }
+        .best-ktm h2{
+            font-size: 30px;
+        }
+        #travel-guide {
+            flex-direction: row;
+        }
+            #travel-guide div:first-child h2{
+                font-size: 27px;
+             }
+             #travel-guide div:first-child p{
+                margin-top: 35px; 
+                font-size: 16px;
+            }
+            #travel-guide div:first-child{
+                width: 75%;
+            }
+            #travel-guide div:last-child{
+                margin-top: 20px;
+            }
+            .too-do{
+                width: 25%;
+            }
+            .tooo-do{
+                width: 75% !important;
+            }
+            .recomd-place h3{
+                font-size: 30px;
+            }
+            .recomd-flex{
+                justify-content: space-around !important;
+                margin: 30px 2px;
+                flex-direction: row;
+                height: 200px;
+            }
+            .recomd-place{
+               margin-top: 0px;
+               }
+               .owl-carousel .owl-nav button.owl-next{
+                left: 94%;
+            }
+            .too-do h3{
+                font-size: 28px;
+            }
+            .too-do p{
+                font-size: 16px;
+            }
+    }
+    
